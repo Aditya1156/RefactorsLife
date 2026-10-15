@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 /**
  * Counts a number up when it scrolls into view ("602+" → 0…602+).
- * The real value is server-rendered; if it's already on screen at load, it doesn't animate.
+ * The real value is server-rendered and shown until the count starts; if it's already on screen at load, it doesn't animate.
  */
 export function CountUp({ value, className }: { value: string; className?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -21,7 +21,7 @@ export function CountUp({ value, className }: { value: string; className?: strin
     if (r.top < window.innerHeight && r.bottom > 0) return;
 
     const render = (n: number) => (el.textContent = `${prefix}${n.toFixed(decimals)}${suffix}`);
-    render(0);
+    // The real number stays on screen until the count actually starts, so it can never get stuck at 0.
     let stop: (() => void) | undefined;
     const io = new IntersectionObserver(([entry]) => {
       if (!entry.isIntersecting) return;

@@ -206,6 +206,22 @@
   }
 }
 
+/* Scroll reveal (components/ui/reveal.tsx). Visible by default; only browsers
+   that support scroll-driven animations fade it in, so content never stays hidden. */
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: reveal-in linear both;
+    animation-timeline: view();
+    animation-range: entry var(--reveal-delay, 0%) entry calc(55% + var(--reveal-delay, 0%));
+  }
+}
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    translate: 0 18px;
+  }
+}
+
 /* Page transitions (app/(site)/template.tsx): old page fades out, new one fades up. The header stays put. */
 ::view-transition {
   pointer-events: none;

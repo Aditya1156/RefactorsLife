@@ -1,29 +1,25 @@
-"use client";
+import type { CSSProperties, ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
-import { motion } from "motion/react";
-import type { ReactNode } from "react";
-
-/** Fades content up as it scrolls into view. Respects reduced-motion (see MotionProvider). */
+/**
+ * Fades content up as it scrolls into view, using a CSS scroll-driven animation
+ * (see `.reveal` in globals.css). No JavaScript is involved, so content is always
+ * visible: browsers without support, reduced-motion users and slow connections
+ * simply see it straight away. `delay` staggers items in a row.
+ */
 export function Reveal({
   children,
   delay = 0,
   className,
-  as = "div",
+  as: Cmp = "div",
 }: {
   children: ReactNode;
   delay?: number;
   className?: string;
   as?: "div" | "li" | "article";
 }) {
-  const Cmp = motion[as];
   return (
-    <Cmp
-      className={className}
-      initial={{ opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "0px 0px -60px 0px" }}
-      transition={{ duration: 0.7, delay, ease: [0.2, 0.7, 0.2, 1] }}
-    >
+    <Cmp className={cn("reveal", className)} style={delay ? ({ "--reveal-delay": `${Math.round(delay * 100)}%` } as CSSProperties) : undefined}>
       {children}
     </Cmp>
   );
