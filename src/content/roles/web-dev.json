@@ -1,0 +1,12 @@
+{
+  "title": "Web Development Intern",
+  "type": "Remote · 4–6 hrs/week · 2–3 months",
+  "icon": "code",
+  "tone": "blue",
+  "order": 5,
+  "summary": "Maintain and extend this website (Next.js): blog, forms, and new features.",
+  "tasks": ["Publish blog posts and resources", "Build features like the questions board", "Keep the site fast, accessible and SEO-friendly"],
+  "need": ["React / Next.js and TypeScript basics", "Git & GitHub (we have a video for that)", "A GitHub profile with a project or two"],
+  "seat": "",
+  "open": true
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hall of Fame — RefactorsLife</title>
+  <meta name="description" content="Internships, placements, hackathon wins and open-source milestones from the RefactorsLife community. Share your win and get featured.">
+  <link rel="canonical" href="https://refactorslife.in/hall-of-fame.html">
+  <meta property="og:title" content="RefactorsLife Hall of Fame">
+  <meta property="og:description" content="Real wins from engineering students in the RefactorsLife community.">
+  <meta property="og:image" content="https://refactorslife.in/assets/img/og.jpg">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="fame" data-root="">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero bg-grid">
+      <div class="container">
+        <div class="fame-hero-badge reveal"><i data-icon="trophy"></i></div>
+        <h1>The <span class="grad">Hall of Fame.</span></h1>
+        <p>Internships landed, placements cracked, hackathons won. Real wins from students who learned alongside RefactorsLife.</p>
+        <div class="hero-ctas" style="justify-content:center;margin-top:8px">
+          <a class="btn btn-accent btn-lg" href="#share">Share your win <i data-icon="arrowRight"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px">
+      <div class="container">
+        <div class="toolbar">
+          <div class="chips" data-win-chips role="group" aria-label="Filter wins"></div>
+        </div>
+        <div class="grid grid-3" data-render="wins" data-filter></div>
+      </div>
+    </section>
+
+    <!-- Share form -->
+    <section class="section" id="share">
+      <div class="container" style="max-width:calc(820px + var(--gutter) * 2)">
+        <div class="section-head" style="justify-content:center;text-align:center">
+          <div style="justify-items:center">
+            <span class="eyebrow">Get featured</span>
+            <h2 class="h2">Share your win.</h2>
+            <p>Big or small: first internship, first open-source PR, a hackathon round you cleared. If a video helped, we want to celebrate it.</p>
+          </div>
+        </div>
+        <div class="form-card form-wrap reveal">
+          <form class="form" data-form="win">
+            <div class="field">
+              <span class="label" id="wtype-label">What did you achieve?</span>
+              <div class="segmented" role="radiogroup" aria-labelledby="wtype-label">
+                <input type="radio" name="type" id="w1" value="internship" checked><label for="w1">Internship</label>
+                <input type="radio" name="type" id="w2" value="placement"><label for="w2">Placement</label>
+                <input type="radio" name="type" id="w3" value="hackathon"><label for="w3">Hackathon</label>
+                <input type="radio" name="type" id="w4" value="opensource"><label for="w4">Open source</label>
+                <input type="radio" name="type" id="w5" value="other"><label for="w5">Other</label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="w-title">Your win in one line</label>
+              <input id="w-title" type="text" name="title" required maxlength="90" placeholder="e.g. Summer SDE intern at a fintech startup">
+            </div>
+            <div class="field">
+              <label for="w-story">The story</label>
+              <textarea id="w-story" name="story" required maxlength="600" placeholder="How did you get there? Which video or resource helped?"></textarea>
+              <span class="hint" data-counter></span>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="w-name">Name</label><input id="w-name" type="text" name="name" required autocomplete="name"></div>
+              <div class="field"><label for="w-email">Email</label><input id="w-email" type="email" name="email" required autocomplete="email"></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="w-meta">College & year</label><input id="w-meta" type="text" name="meta" placeholder="e.g. B.Tech CSE, 3rd year"></div>
+              <div class="field"><label for="w-link">Proof / profile link</label><input id="w-link" type="url" name="link" required placeholder="LinkedIn post, certificate, PR…"></div>
+            </div>
+            <div class="field"><label for="w-photo">Photo link <span class="opt">(optional)</span></label><input id="w-photo" type="url" name="photo" placeholder="Google Drive or LinkedIn photo link"></div>
+            <label class="check"><input type="checkbox" name="publish" value="yes" required> You can feature this win on the site and the channel</label>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+            <button class="btn btn-accent btn-lg" type="submit">Submit my win <i data-icon="arrowRight"></i></button>
+            <p class="form-note">We verify every win before it goes up. That's what makes the Hall of Fame worth being in.</p>
+          </form>
+          <div class="form-success" role="status">
+            <div class="ok"><i data-icon="trophy"></i></div>
+            <h3>Congratulations!</h3>
+            <p>We'll verify your win and let you know when you're in the Hall of Fame.</p>
+            <button class="btn btn-ghost btn-sm" type="button" data-reset-form>Share another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

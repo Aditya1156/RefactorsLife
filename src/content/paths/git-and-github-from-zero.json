@@ -1,0 +1,33 @@
+{
+  "title": "Git & GitHub from zero",
+  "description": "Go from never having used Git to pushing your projects to GitHub and unlocking free pro tools as a student.",
+  "level": "Beginner",
+  "icon": "code",
+  "tone": "blue",
+  "order": 1,
+  "outcomes": [
+    "Explain what Git and GitHub are, and why every developer uses them",
+    "Push any project to GitHub from VS Code",
+    "Get the GitHub Student Developer Pack approved",
+    "Use GitHub Copilot for free"
+  ],
+  "steps": [
+    {
+      "video": "iToAICeOxiA",
+      "note": "The big picture first: what Git and GitHub actually are (in Hindi)."
+    },
+    {
+      "video": "9nb-YxETdqo",
+      "note": "Install Git, set it up and upload your first project."
+    },
+    {
+      "video": "VDwZmzesj0U",
+      "note": "Claim free pro tools with your student ID."
+    },
+    {
+      "video": "O_P4OJcrgRc",
+      "note": "Switch on Copilot in VS Code with your student benefits."
+    }
+  ],
+  "resource": "git-cheatsheet"
+}

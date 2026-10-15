@@ -1,0 +1,10 @@
+{
+  "name": "RefactorsLife",
+  "short_name": "RefactorsLife",
+  "description": "Where Engineering Meets Life — podcasts, tutorials and career talk for engineering students.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#f5f7fb",
+  "icons": [{ "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

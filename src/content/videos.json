@@ -1,0 +1,304 @@
+{
+  "videos": [
+    {
+      "id": "g9lypxza4wM",
+      "title": "The REAL Truth About Smart India Hackathon | 2× SIH Winner Speaks",
+      "cat": "podcast",
+      "views": 284,
+      "duration": "47:05",
+      "featured": true,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "LTQYFCTHt9c",
+      "title": "Content Creator Journey 2026 — Learning, Editing, Researching Every Day",
+      "cat": "life",
+      "views": 90,
+      "duration": "4:23",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "9nb-YxETdqo",
+      "title": "Git & GitHub Tutorial for Beginners | Setup + First Project Upload",
+      "cat": "dev",
+      "views": 160,
+      "duration": "9:47",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "FJ_IQN_YFxs",
+      "title": "Complete C / C++ Setup for Beginners With VS Code",
+      "cat": "dev",
+      "views": 149,
+      "duration": "13:57",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "iToAICeOxiA",
+      "title": "Git & GitHub Explained in Hindi | Beginners Guide 2026",
+      "cat": "dev",
+      "views": 273,
+      "duration": "4:57",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "sV0Fvexp6AU",
+      "title": "I Switched to VS Code, and This Happened",
+      "cat": "dev",
+      "views": 333,
+      "duration": "25:43",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "O_P4OJcrgRc",
+      "title": "GitHub Copilot in VS Code (FREE) + Developer Coupons Explained",
+      "cat": "dev",
+      "views": 1700,
+      "duration": "4:00",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "VDwZmzesj0U",
+      "title": "How to Get GitHub Student Developer Pack in 2026 (Step-by-Step)",
+      "cat": "dev",
+      "views": 12000,
+      "duration": "8:05",
+      "featured": false,
+      "popular": true,
+      "editor": null
+    },
+    {
+      "id": "D6phGbqQtYI",
+      "title": "How to Get 50+ LPA in Recession & AI Era | Zomato SE Strategy (Full Breakdown)",
+      "cat": "career",
+      "views": 133,
+      "duration": "8:06",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "fZ9Jx0HpRnM",
+      "title": "The ChatGPT Crash: Why AI Will Change Society Forever",
+      "cat": "genai",
+      "views": 64,
+      "duration": "1:50",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "5xYKkgmTu8E",
+      "title": "Rejected From 10 LPA Jobs! This Is the Reason",
+      "cat": "career",
+      "views": 156,
+      "duration": "3:32",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "G81YQcQXCHo",
+      "title": "How to Claim ChatGPT For Free — Step-by-Step",
+      "cat": "genai",
+      "views": 407,
+      "duration": "3:23",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "QVIUd4uE_cU",
+      "title": "LAB-2 GSP1210 — Multimodality with Gemini",
+      "cat": "genai",
+      "views": 266,
+      "duration": "6:38",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "VSs9_z2EE_8",
+      "title": "LAB-1 GSP1209 — Explore Generative AI with the Gemini API in Vertex AI",
+      "cat": "genai",
+      "views": 504,
+      "duration": "7:13",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "lmgo_hP_IZ0",
+      "title": "How to Plan Your Day — Restart",
+      "cat": "life",
+      "views": 115,
+      "duration": "10:06",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "PX3kgpHe3og",
+      "title": "My Comeback Plan for Engineering",
+      "cat": "life",
+      "views": 134,
+      "duration": "14:54",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "fqC0hee-QTM",
+      "title": "Google Gen AI Exchange Program — 'File Is Not Visible' Doubt Solving",
+      "cat": "genai",
+      "views": 241,
+      "duration": "2:11",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "AehcnFXIyiM",
+      "title": "LAB-4 — Inspect Rich Documents with Gemini Multimodality & RAG (GSP520)",
+      "cat": "genai",
+      "views": 759,
+      "duration": "10:12",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "U0GBfC5aPfE",
+      "title": "LAB-3 — Multimodal RAG using Gemini API in Vertex AI (GSP1231)",
+      "cat": "genai",
+      "views": 254,
+      "duration": "8:52",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "3wcPuC6kVlY",
+      "title": "Build a Multi-Modal GenAI Application: Challenge Lab",
+      "cat": "genai",
+      "views": 1200,
+      "duration": "4:23",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "fUd0bELI5Vc",
+      "title": "Gen AI Exchange Program 2025 — New Changes Explained",
+      "cat": "genai",
+      "views": 280,
+      "duration": "2:03",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "a2m9KzbvEaw",
+      "title": "GSP1230 Lab-2 — Using Gemini for Multimodal Retail Recommendations",
+      "cat": "genai",
+      "views": 235,
+      "duration": "5:31",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "txiFQQsUhvo",
+      "title": "Doubt & Discussion Session on Google Gen AI Exchange Program",
+      "cat": "genai",
+      "views": 234,
+      "duration": "50:29",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "_RQB5ND2F8Q",
+      "title": "LAB-1 GSP1210 — Multimodality with Gemini",
+      "cat": "genai",
+      "views": 358,
+      "duration": "8:27",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "5JzDKkDPf38",
+      "title": "Build AI-Powered Chef App with Gemini & Streamlit (GSP517)",
+      "cat": "genai",
+      "views": 1100,
+      "duration": "8:40",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "zmEcqSP3elQ",
+      "title": "Streamlit + Cloud Run + Gemini API in Vertex AI — LAB-4 GSP1229",
+      "cat": "genai",
+      "views": 425,
+      "duration": "7:30",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "UB2fD4hRznY",
+      "title": "GSP1209 LAB-3 — Develop GenAI Apps with Gemini and Streamlit",
+      "cat": "genai",
+      "views": 264,
+      "duration": "3:35",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "RtQXE_tM9rY",
+      "title": "Top the Google Leaderboard — Get $100 Free Credit & 800 Points",
+      "cat": "genai",
+      "views": 501,
+      "duration": "4:02",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "wpIfbgCyhng",
+      "title": "LAB-2 GSP1227 — Introduction to Function Calling with Gemini",
+      "cat": "genai",
+      "views": 247,
+      "duration": "3:51",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    },
+    {
+      "id": "_H0NBELIXSg",
+      "title": "Lab-1 GSP1228 — Google Gen AI Exchange Program Course 3",
+      "cat": "genai",
+      "views": 367,
+      "duration": "8:17",
+      "featured": false,
+      "popular": false,
+      "editor": null
+    }
+  ]
+}

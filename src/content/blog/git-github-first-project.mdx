@@ -1,0 +1,81 @@
+---
+title: "Git & GitHub for Beginners: Set Up and Upload Your First Project"
+excerpt: "Install Git, connect GitHub, and push your first repository. The exact commands, explained."
+date: 2026-10-15
+read: 8 min read
+tag: Dev Setup
+video: 9nb-YxETdqo
+---
+
+<YouTube id="9nb-YxETdqo" title="Git & GitHub Tutorial for Beginners" />
+
+**Git** is a tool on your computer that tracks every change you make to your code. **GitHub** is a website that stores those Git projects online, so you can back them up, share them and collaborate. You need both. Prefer Hindi? Watch <VideoLink id="iToAICeOxiA" title="Git & GitHub Explained in Hindi">Git & GitHub explained in Hindi</VideoLink>.
+
+## 1. Install Git
+
+- **Windows:** download the installer from [git-scm.com](https://git-scm.com/downloads). The default options are fine.
+- **macOS:** run `xcode-select --install` in Terminal, or `brew install git`.
+- **Linux (Ubuntu/Debian):** `sudo apt install git`.
+
+Check it worked:
+
+```bash
+git --version
+```
+
+## 2. Tell Git who you are
+
+Every commit is signed with a name and email. Use the same email as your GitHub account:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global init.defaultBranch main
+```
+
+## 3. Create a repository on GitHub
+
+1. Sign in to [github.com](https://github.com) and click **New repository**.
+2. Give it a name, e.g. `my-first-project`.
+3. Leave "Add a README" **unchecked**. We'll push our own files.
+4. Click **Create repository** and copy the URL it shows.
+
+## 4. Push your project
+
+Open a terminal in your project folder (in VS Code: *Terminal → New Terminal*) and run:
+
+```bash
+git init                      # start tracking this folder
+git add .                     # stage every file
+git commit -m "first commit"  # save a snapshot
+git remote add origin https://github.com/<you>/my-first-project.git
+git push -u origin main       # upload to GitHub
+```
+
+Refresh the GitHub page. Your files are there.
+
+## 5. Signing in from the terminal
+
+GitHub doesn't accept your account password for `git push`. The easiest options:
+
+- **Windows:** Git's installer includes a credential manager. A browser window opens to sign in the first time you push.
+- **Any OS:** install the [GitHub CLI](https://cli.github.com) and run `gh auth login`.
+- Or create a **personal access token** in *Settings → Developer settings* and paste it when asked for a password.
+
+## 6. Your everyday loop
+
+After the first push, every change is just three commands:
+
+```bash
+git add .
+git commit -m "describe what you changed"
+git push
+```
+
+<Callout>
+Commit small and often, with messages that say *why*. Future you, and recruiters reading your GitHub, will thank you.
+</Callout>
+
+## Next steps
+
+If you're a student, grab the [GitHub Student Developer Pack](/blog/github-student-developer-pack-2026) next. Free Copilot and a free domain make your GitHub profile much more powerful. And keep the [Git cheat sheet](/resources/git-cheatsheet) next to your screen.

@@ -1,0 +1,65 @@
+{
+  "title": "Google Cloud GenAI labs",
+  "description": "Walkthroughs of the Google Gen AI Exchange Program labs (Gemini API, Vertex AI, multimodal RAG and Streamlit apps) in the order they were published.",
+  "level": "Intermediate",
+  "icon": "trending",
+  "tone": "sky",
+  "order": 3,
+  "outcomes": [
+    "Call the Gemini API from Vertex AI",
+    "Build and deploy a Streamlit GenAI app",
+    "Use multimodal inputs and RAG",
+    "Clear the challenge labs"
+  ],
+  "steps": [
+    {
+      "video": "_H0NBELIXSg",
+      "note": "Course 3, lab 1 (GSP1228)."
+    },
+    {
+      "video": "wpIfbgCyhng",
+      "note": "Function calling with Gemini (GSP1227)."
+    },
+    {
+      "video": "UB2fD4hRznY",
+      "note": "Develop GenAI apps with Gemini and Streamlit (GSP1209, lab 3)."
+    },
+    {
+      "video": "zmEcqSP3elQ",
+      "note": "Streamlit on Cloud Run with the Gemini API (GSP1229, lab 4)."
+    },
+    {
+      "video": "5JzDKkDPf38",
+      "note": "Build an AI-powered chef app (GSP517)."
+    },
+    {
+      "video": "_RQB5ND2F8Q",
+      "note": "Multimodality with Gemini (GSP1210, lab 1)."
+    },
+    {
+      "video": "a2m9KzbvEaw",
+      "note": "Multimodal retail recommendations (GSP1230, lab 2)."
+    },
+    {
+      "video": "3wcPuC6kVlY",
+      "note": "Build a multimodal GenAI application: challenge lab."
+    },
+    {
+      "video": "U0GBfC5aPfE",
+      "note": "Multimodal RAG with the Gemini API (GSP1231, lab 3)."
+    },
+    {
+      "video": "AehcnFXIyiM",
+      "note": "Inspect rich documents with multimodality & RAG (GSP520)."
+    },
+    {
+      "video": "VSs9_z2EE_8",
+      "note": "Explore generative AI with the Gemini API in Vertex AI (GSP1209, lab 1)."
+    },
+    {
+      "video": "QVIUd4uE_cU",
+      "note": "Multimodality with Gemini (GSP1210, lab 2)."
+    }
+  ],
+  "resource": null
+}

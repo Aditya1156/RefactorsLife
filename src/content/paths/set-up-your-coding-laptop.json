@@ -1,0 +1,33 @@
+{
+  "title": "Set up your coding laptop",
+  "description": "Everything a first-year CS / IT student needs installed, from the editor to the compiler to an AI pair programmer.",
+  "level": "Beginner",
+  "icon": "zap",
+  "tone": "indigo",
+  "order": 2,
+  "outcomes": [
+    "A properly configured VS Code",
+    "C / C++ compiling and running",
+    "Every project backed up with Git",
+    "An AI assistant inside your editor"
+  ],
+  "steps": [
+    {
+      "video": "sV0Fvexp6AU",
+      "note": "Why VS Code, and how to set it up properly."
+    },
+    {
+      "video": "FJ_IQN_YFxs",
+      "note": "Install a C/C++ compiler and run your first program."
+    },
+    {
+      "video": "9nb-YxETdqo",
+      "note": "Add Git so every project is versioned and backed up."
+    },
+    {
+      "video": "O_P4OJcrgRc",
+      "note": "Add Copilot as your AI pair programmer."
+    }
+  ],
+  "resource": "dev-setup-checklist"
+}

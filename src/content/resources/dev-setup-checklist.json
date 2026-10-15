@@ -1,0 +1,98 @@
+{
+  "title": "New Laptop Dev Setup Checklist",
+  "text": "VS Code, Git, compilers, must-have extensions and free student tools. Set up a coding laptop in one evening.",
+  "kind": "Checklist · 1 page",
+  "icon": "zap",
+  "tone": "indigo",
+  "order": 3,
+  "video": "sV0Fvexp6AU",
+  "soon": false,
+  "eyebrow": "Checklist",
+  "intro": "Everything a CS / IT student needs on a fresh laptop, in the order to install it. Install only the languages your courses actually use.",
+  "sections": [
+    {
+      "title": "1 · Editor",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Install **VS Code** from code.visualstudio.com",
+          "Turn on **Auto Save** and **Format on Save** in settings",
+          "Sign in to sync settings across devices",
+          "Learn 3 shortcuts: **Command Palette**, **Quick Open**, **multi-cursor**"
+        ]
+      }
+    },
+    {
+      "title": "2 · Must-have extensions",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Language packs: **C/C++**, **Python**, **Extension Pack for Java**",
+          "**Prettier** for consistent formatting",
+          "**GitLens** to see who changed what, and when",
+          "**Error Lens** to show errors inline",
+          "**Live Server** for HTML/CSS/JS projects"
+        ]
+      }
+    },
+    {
+      "title": "3 · Git & GitHub",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Install **Git** from git-scm.com (macOS: xcode-select --install)",
+          "Set your **name and email** with git config --global",
+          "Create a **GitHub** account with a professional username",
+          "Sign in from the terminal: **GitHub CLI** (gh auth login) or an SSH key",
+          "Push one test repo to confirm everything works"
+        ]
+      }
+    },
+    {
+      "title": "4 · Languages & runtimes",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "**C/C++ compiler**: MinGW-w64 via MSYS2 (Windows), Xcode tools (macOS), build-essential (Linux)",
+          "**Python 3** from python.org. On Windows, tick \"Add to PATH\"",
+          "**Node.js LTS** for web development",
+          "**Java JDK (LTS)** if your course or DSA practice uses Java",
+          "Verify each one with --version in a new terminal"
+        ]
+      }
+    },
+    {
+      "title": "5 · Free student perks",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Apply for the **GitHub Student Developer Pack**",
+          "Activate **GitHub Copilot** (free for verified students)",
+          "Claim a **JetBrains student licence** if you use IntelliJ / PyCharm",
+          "Claim a **free domain** from the pack for your portfolio"
+        ]
+      }
+    },
+    {
+      "title": "6 · Habits that save you later",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "One **~/projects** folder; never code on the Desktop",
+          "**Every project in Git**, pushed to GitHub",
+          "A short **README** in every repo",
+          "Back up notes and files to the cloud",
+          "Use a **password manager** and turn on 2FA everywhere"
+        ]
+      }
+    }
+  ],
+  "footLeft": "Step-by-step setup videos: VS Code, C/C++, Git & GitHub on the channel.",
+  "footRight": "youtube.com/@RefactorsLife"
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Videos — RefactorsLife</title>
+  <meta name="description" content="Every RefactorsLife video in one place: the Refactoring Life podcast, Git & GitHub and VS Code tutorials, Google Cloud GenAI labs and career advice for engineering students.">
+  <link rel="canonical" href="https://refactorslife.in/videos.html">
+  <meta property="og:title" content="Videos — RefactorsLife">
+  <meta property="og:description" content="Podcast, dev tutorials, GenAI labs and career talk for engineering students.">
+  <meta property="og:image" content="https://refactorslife.in/assets/img/og.jpg">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="videos" data-root="">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero bg-grid bg-glow">
+      <div class="container">
+        <span class="eyebrow">The library</span>
+        <h1>Every video, <span class="grad">neatly sorted.</span></h1>
+        <p>Podcast episodes, setup guides, GenAI labs and career breakdowns. Filter by topic or search for exactly what you need.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px">
+      <div class="container">
+        <div class="toolbar">
+          <div class="chips" data-chips role="group" aria-label="Filter by topic"></div>
+          <label class="search">
+            <span class="sr-only">Search videos</span>
+            <i data-icon="search"></i>
+            <input type="search" placeholder="Search videos…" data-search>
+          </label>
+        </div>
+        <p class="mono muted" style="font-size:13px;margin:-16px 0 24px" data-count aria-live="polite"></p>
+        <div class="video-grid" data-render="all-videos"></div>
+
+        <div class="cta-panel reveal" style="margin-top:96px">
+          <div>
+            <span class="eyebrow">Missing something?</span>
+            <h2 style="margin-top:14px">Request the next video.</h2>
+            <p>Tell us what you're stuck on. Topics that get asked the most go straight to the top of the content calendar.</p>
+          </div>
+          <div class="actions" style="justify-content:flex-end;margin:0">
+            <a class="btn btn-accent btn-lg" href="ask.html">Request a topic <i data-icon="arrowRight"></i></a>
+            <a class="btn btn-yt btn-lg" data-link="channel.subscribe" href="#" target="_blank" rel="noopener"><i data-icon="youtube"></i>Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

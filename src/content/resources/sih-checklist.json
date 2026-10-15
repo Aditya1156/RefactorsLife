@@ -1,0 +1,99 @@
+{
+  "title": "Smart India Hackathon Prep Checklist",
+  "text": "From forming the team to the final pitch: a stage-by-stage checklist from a 2× SIH winner.",
+  "kind": "Checklist · 2 pages",
+  "icon": "trophy",
+  "tone": "sky",
+  "order": 2,
+  "video": "g9lypxza4wM",
+  "soon": false,
+  "eyebrow": "Checklist",
+  "intro": "Tick these off stage by stage. Rules and dates change every year, so always confirm the current guidelines on the official SIH portal.",
+  "sections": [
+    {
+      "title": "1 · Build the team",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Read this year's **official guidelines and timeline** before anything else",
+          "Meet the **team size and composition rules** (check the current rules, e.g. the female-member requirement)",
+          "Cover the skills: **frontend, backend, ML/data, design** and one strong **presenter**",
+          "Get a **faculty mentor** who'll actually review your work",
+          "Agree on roles, a group chat and a weekly meeting time"
+        ]
+      }
+    },
+    {
+      "title": "2 · Pick the problem statement",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Shortlist **3–5 statements** the whole team understands",
+          "Write the core problem in **one sentence**: who suffers, and how",
+          "Check feasibility: can you build a **working demo** in the time you have?",
+          "Weigh competition: popular statements attract far more teams",
+          "Research what already exists, and how yours is different"
+        ]
+      }
+    },
+    {
+      "title": "3 · Idea submission & internal round",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Use the **official PPT template** and stay within its slide limits",
+          "Cover: **problem, solution, uniqueness, feasibility, impact**",
+          "Add a clear **architecture diagram** and the tech stack",
+          "Show **mockups or screenshots**, not just text",
+          "Clear your **college internal hackathon** (nominations usually come from here)"
+        ]
+      }
+    },
+    {
+      "title": "4 · Build the prototype",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Make **one core flow work end-to-end** before adding features",
+          "Use **Git & GitHub from day one**, with one branch per feature",
+          "Keep **sample data** ready so the demo never depends on luck",
+          "Record a **backup demo video** in case the Wi-Fi or the server fails",
+          "Write a clean **README** with setup steps and screenshots"
+        ]
+      }
+    },
+    {
+      "title": "5 · Grand finale",
+      "note": "",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Rehearse the pitch to **fit the time you're given**, then rehearse again",
+          "**Every member** can explain the whole project, not just their part",
+          "Prepare answers on **scalability, cost, data privacy and security**",
+          "Act on mentor/judge feedback **between rounds**, and show that you did",
+          "Sleep in shifts. A tired team gives a weak final demo"
+        ]
+      }
+    },
+    {
+      "title": "6 · After the hackathon",
+      "note": "// win or lose",
+      "list": {
+        "discriminant": "checklist",
+        "value": [
+          "Make the repo public with a **polished README**",
+          "Post the journey on **LinkedIn** and tag your teammates and mentor",
+          "Add the project to your **resume** with measurable results",
+          "Write down what you'd do differently for next year"
+        ]
+      }
+    }
+  ],
+  "footLeft": "Hear the full story from a 2× SIH winner on the Refactoring Life podcast.",
+  "footRight": "youtube.com/@RefactorsLife"
+}

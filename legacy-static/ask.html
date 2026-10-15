@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask Aditya — RefactorsLife</title>
+  <meta name="description" content="Ask Aditya Kumar anything about college, coding, placements, hackathons or content creation — anonymously if you like. Leave a review or feedback for RefactorsLife.">
+  <link rel="canonical" href="https://refactorslife.in/ask.html">
+  <meta property="og:title" content="Ask Aditya anything — RefactorsLife">
+  <meta property="og:image" content="https://refactorslife.in/assets/img/og.jpg">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="ask" data-root="">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero bg-grid bg-glow">
+      <div class="container">
+        <span class="eyebrow">Ask Aditya</span>
+        <h1>Ask anything. <span class="grad">Seriously.</span></h1>
+        <p>College, code, placements, hackathons, content creation — or life. Every question gets read, and the most-asked ones become videos.</p>
+      </div>
+    </section>
+
+    <!-- Ask form -->
+    <section class="section" style="padding-top:24px">
+      <div class="container">
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px;align-items:start">
+          <div class="form-card form-wrap reveal">
+            <form class="form" data-form="ask">
+              <div class="field">
+                <span class="label" id="topic-label">Topic</span>
+                <div class="segmented" role="radiogroup" aria-labelledby="topic-label">
+                  <input type="radio" name="topic" id="t1" value="Placements" checked><label for="t1">Placements</label>
+                  <input type="radio" name="topic" id="t2" value="Coding & dev"><label for="t2">Coding & dev</label>
+                  <input type="radio" name="topic" id="t3" value="Hackathons"><label for="t3">Hackathons</label>
+                  <input type="radio" name="topic" id="t4" value="College life"><label for="t4">College life</label>
+                  <input type="radio" name="topic" id="t5" value="Content creation"><label for="t5">Content creation</label>
+                  <input type="radio" name="topic" id="t6" value="Video request"><label for="t6">Video request</label>
+                  <input type="radio" name="topic" id="t7" value="Other"><label for="t7">Other</label>
+                </div>
+              </div>
+              <div class="field">
+                <label for="q-text">Your question</label>
+                <textarea id="q-text" name="question" required maxlength="1000" placeholder="Be specific — what have you tried, and where are you stuck?"></textarea>
+                <span class="hint" data-counter></span>
+              </div>
+              <div class="form-row">
+                <div class="field"><label for="q-name">Name <span class="opt">(optional)</span></label><input id="q-name" type="text" name="name" autocomplete="name"></div>
+                <div class="field"><label for="q-email">Email <span class="opt">(for a reply)</span></label><input id="q-email" type="email" name="email" autocomplete="email"></div>
+              </div>
+              <div class="field"><label for="q-college">College & year <span class="opt">(optional)</span></label><input id="q-college" type="text" name="college" placeholder="e.g. 2nd year CSE, tier-3 college"></div>
+              <label class="check"><input type="checkbox" name="anonymous" value="yes"> Keep me anonymous if this is featured in a video</label>
+              <label class="check"><input type="checkbox" name="canFeature" value="yes" checked> It's okay to answer this publicly on the channel</label>
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+              <button class="btn btn-accent btn-lg" type="submit">Send question <i data-icon="arrowRight"></i></button>
+            </form>
+            <div class="form-success" role="status">
+              <div class="ok"><i data-icon="check"></i></div>
+              <h3>Question received!</h3>
+              <p>Thanks — it's in the queue. If you left an email, you'll hear back when it's answered.</p>
+              <button class="btn btn-ghost btn-sm" type="button" data-reset-form>Ask another</button>
+            </div>
+          </div>
+
+          <div style="display:grid;gap:28px" id="answered">
+            <div style="display:grid;gap:12px">
+              <span class="eyebrow">Already answered</span>
+              <h2 class="h3" style="font-size:28px">Your question might already have a video.</h2>
+            </div>
+            <div class="faq" data-render="answered"></div>
+            <div class="card" style="display:flex;gap:16px;align-items:center;padding:20px">
+              <div class="icon-tile" style="margin:0;flex-shrink:0;color:#29a9eb;background:rgba(41,169,235,.12)"><i data-icon="telegram"></i></div>
+              <div style="flex:1"><b style="display:block">Need a faster answer?</b><span class="muted" style="font-size:14.5px">The Telegram group is where the community helps each other daily.</span></div>
+              <a class="btn btn-ghost btn-sm" data-link="socials.telegramGroup" href="#" target="_blank" rel="noopener">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow warm">Reviews & feedback</span>
+            <h2 class="h2">What the community says.</h2>
+            <p>Did a video help you land an internship, fix a bug or win a hackathon? Tell us — and tell us what to do better.</p>
+          </div>
+        </div>
+        <div class="masonry" data-render="reviews"></div>
+
+        <div style="max-width:720px;margin:56px auto 0">
+          <div class="form-card form-wrap reveal">
+            <form class="form" data-form="review">
+              <div class="field">
+                <span class="label" id="rating-label">Your rating</span>
+                <div class="stars" role="radiogroup" aria-labelledby="rating-label">
+                  <input type="radio" name="rating" id="s5" value="5" required><label for="s5" aria-label="5 stars"><i data-icon="star"></i></label>
+                  <input type="radio" name="rating" id="s4" value="4"><label for="s4" aria-label="4 stars"><i data-icon="star"></i></label>
+                  <input type="radio" name="rating" id="s3" value="3"><label for="s3" aria-label="3 stars"><i data-icon="star"></i></label>
+                  <input type="radio" name="rating" id="s2" value="2"><label for="s2" aria-label="2 stars"><i data-icon="star"></i></label>
+                  <input type="radio" name="rating" id="s1" value="1"><label for="s1" aria-label="1 star"><i data-icon="star"></i></label>
+                </div>
+              </div>
+              <div class="field">
+                <span class="label" id="kind-label">This is a…</span>
+                <div class="segmented" role="radiogroup" aria-labelledby="kind-label">
+                  <input type="radio" name="kind" id="k1" value="Review" checked><label for="k1">Review</label>
+                  <input type="radio" name="kind" id="k2" value="Suggestion"><label for="k2">Suggestion</label>
+                  <input type="radio" name="kind" id="k3" value="Bug on the site"><label for="k3">Bug on the site</label>
+                </div>
+              </div>
+              <div class="field">
+                <label for="r-text">Your words</label>
+                <textarea id="r-text" name="text" required maxlength="600" placeholder="Which video helped, and how?"></textarea>
+                <span class="hint" data-counter></span>
+              </div>
+              <div class="form-row">
+                <div class="field"><label for="r-name">Name</label><input id="r-name" type="text" name="name" required autocomplete="name"></div>
+                <div class="field"><label for="r-meta">College / role <span class="opt">(optional)</span></label><input id="r-meta" type="text" name="meta" placeholder="e.g. B.Tech CSE, 3rd year"></div>
+              </div>
+              <label class="check"><input type="checkbox" name="publish" value="yes" checked> You can publish this review on the site</label>
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+              <button class="btn btn-primary btn-lg" type="submit">Send feedback</button>
+            </form>
+            <div class="form-success" role="status">
+              <div class="ok"><i data-icon="heart"></i></div>
+              <h3>Thank you!</h3>
+              <p>Feedback like this keeps the channel going. Reviews appear on the wall after a quick check.</p>
+              <button class="btn btn-ghost btn-sm" type="button" data-reset-form>Write another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

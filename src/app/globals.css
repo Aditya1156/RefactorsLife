@@ -1,26 +1,303 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ==========================================================================
+   RefactorsLife design tokens — light, minimal, glass, blue.
+   ========================================================================== */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SF Mono", Menlo, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --color-bg: #f5f7fb;
+  --color-fg: #0b1324;
+  --color-fg-soft: #334155;
+  --color-muted: #64748b;
+  --color-ink: #0f172a;
+  --color-accent: #2563eb;
+  --color-accent-strong: #1d4ed8;
+  --color-sky: #0ea5e9;
+  --color-indigo: #4f46e5;
+  --color-yt: #ff0033;
+  --color-line: rgb(15 23 42 / 0.07);
+  --color-line-strong: rgb(15 23 42 / 0.13);
+
+  --shadow-glass-sm: 0 0 0 1px rgb(15 23 42 / 0.05), 0 2px 6px -2px rgb(15 23 42 / 0.06);
+  --shadow-glass: 0 0 0 1px rgb(15 23 42 / 0.05), 0 1px 2px rgb(15 23 42 / 0.04), 0 16px 40px -16px rgb(30 58 138 / 0.16);
+  --shadow-glass-lg: 0 0 0 1px rgb(15 23 42 / 0.05), 0 30px 70px -24px rgb(30 58 138 / 0.28);
+  --shadow-btn: 0 1px 0 rgb(255 255 255 / 0.25) inset, 0 8px 20px -8px rgb(37 99 235 / 0.65);
+  --shadow-btn-lg: 0 1px 0 rgb(255 255 255 / 0.25) inset, 0 14px 28px -10px rgb(37 99 235 / 0.7);
+
+  --ease-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --animate-drift: drift 26s ease-in-out infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-wave: wave 1.4s ease-in-out infinite;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-pop: pop 0.3s var(--ease-soft);
+  --animate-fade: fade 0.2s ease;
+  --animate-rise: rise 0.8s var(--ease-soft) both;
+
+  @keyframes drift {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      transform: translate(60px, 40px) scale(1.08);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes wave {
+    0%,
+    100% {
+      height: 20%;
+    }
+    50% {
+      height: 100%;
+    }
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes pop {
+    from {
+      opacity: 0;
+      transform: scale(0.97) translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Frosted glass surfaces */
+@utility glass {
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.82), rgb(255 255 255 / 0.58));
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border: 1px solid rgb(255 255 255 / 0.85);
+  box-shadow:
+    var(--shadow-glass),
+    inset 0 1px 0 rgb(255 255 255 / 0.95);
+}
+@utility glass-flat {
+  background: rgb(255 255 255 / 0.68);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border: 1px solid rgb(255 255 255 / 0.85);
+  box-shadow:
+    var(--shadow-glass-sm),
+    inset 0 1px 0 rgb(255 255 255 / 0.95);
+}
+@utility glass-dark {
+  background: rgb(15 23 42 / 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(255 255 255 / 0.18);
+}
+@utility text-grad {
+  background: linear-gradient(95deg, var(--color-indigo) 0%, var(--color-accent) 45%, var(--color-sky) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@utility bg-grid-fade {
+  background-image: linear-gradient(rgb(37 99 235 / 0.06) 1px, transparent 1px), linear-gradient(90deg, rgb(37 99 235 / 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 65% 70% at 50% 10%, #000 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 65% 70% at 50% 10%, #000 20%, transparent 70%);
+}
+/* Soft blue light that follows the cursor across a card (see components/ui/spotlight.tsx). */
+@utility spotlight {
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 50%), rgb(37 99 235 / 0.1), transparent 60%);
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+@utility container-rl {
+  width: 100%;
+  max-width: calc(1160px + 2.5rem);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width < 48rem) {
+    padding-inline: 1rem;
+  }
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--color-fg);
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* Page transitions (app/(site)/template.tsx): old page fades out, new one fades up. The header stays put. */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-group(site-header) {
+  animation: none;
+  z-index: 100;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+::view-transition-new(site-header) {
+  animation: none;
+}
+::view-transition-old(.page-out) {
+  animation: 140ms ease-in both vt-fade-out;
+}
+::view-transition-new(.page-in) {
+  animation: 320ms var(--ease-soft) 60ms both vt-rise;
+}
+@keyframes vt-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes vt-rise {
+  from {
+    opacity: 0;
+    translate: 0 14px;
+  }
+}
+
+/* Highlighted code blocks in MDX (rehype-pretty-code + Shiki) */
+[data-rehype-pretty-code-figure] [data-line] {
+  padding-inline: 1.375rem;
+}
+[data-rehype-pretty-code-figure] [data-highlighted-line] {
+  background: rgb(255 255 255 / 0.06);
+  box-shadow: inset 2px 0 0 var(--color-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}
+
+/* Browsers without backdrop-filter: near-solid white */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass,
+  .glass-flat {
+    background: rgb(255 255 255 / 0.95);
+  }
+}
+
+/* Printable resources */
+@media print {
+  @page {
+    margin: 12mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-plain {
+    box-shadow: none !important;
+    border: 0 !important;
+    background: #fff !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-avoid {
+    break-inside: avoid;
+  }
 }

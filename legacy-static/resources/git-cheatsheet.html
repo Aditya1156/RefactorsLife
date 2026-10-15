@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Git & GitHub Cheat Sheet — RefactorsLife</title>
+  <meta name="description" content="A free, printable one-page Git & GitHub cheat sheet for beginners: setup, the daily loop, branches, history and how to undo mistakes.">
+  <link rel="canonical" href="https://refactorslife.in/resources/git-cheatsheet.html">
+  <meta property="og:title" content="Git & GitHub Cheat Sheet (free, printable)">
+  <meta property="og:image" content="https://refactorslife.in/assets/img/og.jpg">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="resources" data-root="../">
+  <div id="site-header"></div>
+
+  <main id="main" class="container" style="max-width:calc(980px + var(--gutter) * 2)">
+    <div class="no-print" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:24px">
+      <a class="back-link" href="../resources.html"><i data-icon="arrowLeft"></i>All resources</a>
+      <button class="btn btn-dark btn-sm" type="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <article class="glass doc">
+      <header class="doc-head">
+        <div>
+          <span class="eyebrow">Cheat sheet</span>
+          <h1>Git & GitHub Cheat Sheet</h1>
+          <p>Every command a beginner needs, in the order you'll need it. Pin it next to your screen.</p>
+        </div>
+        <div class="doc-brand"><span class="logo-mark">R/</span>refactorslife.in</div>
+      </header>
+
+      <div class="doc-grid">
+        <section class="doc-block">
+          <h3>1 · One-time setup <span>// once per laptop</span></h3>
+          <div class="cmds">
+            <div class="cmd"><code>git --version</code><span>Check Git is installed</span></div>
+            <div class="cmd"><code>git config --global user.name "Your Name"</code><span>Name on your commits</span></div>
+            <div class="cmd"><code>git config --global user.email "you@mail.com"</code><span>Use your GitHub email</span></div>
+            <div class="cmd"><code>git config --global init.defaultBranch main</code><span>New repos start on <i>main</i></span></div>
+          </div>
+        </section>
+
+        <section class="doc-block">
+          <h3>2 · Start a project</h3>
+          <div class="cmds">
+            <div class="cmd"><code>git init</code><span>Start tracking the current folder</span></div>
+            <div class="cmd"><code>git clone &lt;url&gt;</code><span>Download a repo from GitHub</span></div>
+            <div class="cmd"><code>git remote add origin &lt;url&gt;</code><span>Link your folder to a GitHub repo</span></div>
+            <div class="cmd"><code>git push -u origin main</code><span>First upload; sets the default</span></div>
+          </div>
+        </section>
+
+        <section class="doc-block">
+          <h3>3 · The daily loop <span>// 90% of your Git life</span></h3>
+          <div class="cmds">
+            <div class="cmd"><code>git status</code><span>What changed? Run it often</span></div>
+            <div class="cmd"><code>git add .</code><span>Stage every change</span></div>
+            <div class="cmd"><code>git add &lt;file&gt;</code><span>Stage one file</span></div>
+            <div class="cmd"><code>git commit -m "message"</code><span>Save a snapshot</span></div>
+            <div class="cmd"><code>git push</code><span>Upload commits to GitHub</span></div>
+            <div class="cmd"><code>git pull</code><span>Download teammates' changes</span></div>
+          </div>
+        </section>
+
+        <section class="doc-block">
+          <h3>4 · Branches</h3>
+          <div class="cmds">
+            <div class="cmd"><code>git branch</code><span>List branches</span></div>
+            <div class="cmd"><code>git switch -c feature-x</code><span>Create and move to a branch</span></div>
+            <div class="cmd"><code>git switch main</code><span>Go back to main</span></div>
+            <div class="cmd"><code>git merge feature-x</code><span>Bring a branch into the current one</span></div>
+            <div class="cmd"><code>git branch -d feature-x</code><span>Delete a merged branch</span></div>
+          </div>
+        </section>
+
+        <section class="doc-block">
+          <h3>5 · See history</h3>
+          <div class="cmds">
+            <div class="cmd"><code>git log --oneline --graph</code><span>Compact history</span></div>
+            <div class="cmd"><code>git diff</code><span>Unstaged changes</span></div>
+            <div class="cmd"><code>git diff --staged</code><span>What you're about to commit</span></div>
+            <div class="cmd"><code>git show &lt;commit&gt;</code><span>Details of one commit</span></div>
+          </div>
+        </section>
+
+        <section class="doc-block">
+          <h3>6 · Undo mistakes <span>// don't panic</span></h3>
+          <div class="cmds">
+            <div class="cmd"><code>git restore &lt;file&gt;</code><span>Discard unsaved changes to a file</span></div>
+            <div class="cmd"><code>git restore --staged &lt;file&gt;</code><span>Unstage, keep the changes</span></div>
+            <div class="cmd"><code>git commit --amend</code><span>Fix the last commit (before pushing)</span></div>
+            <div class="cmd"><code>git revert &lt;commit&gt;</code><span>Safely undo a pushed commit</span></div>
+            <div class="cmd"><span><code>git stash</code> / <code>git stash pop</code></span><span>Park changes, bring them back</span></div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="doc-foot">
+        <span><b>Tip:</b> add a <code class="mono">.gitignore</code> so <code class="mono">node_modules</code>, <code class="mono">.env</code> and build files never get committed.</span>
+        <span>Watch the walkthrough: youtube.com/@RefactorsLife</span>
+      </footer>
+    </article>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

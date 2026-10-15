@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Internships & Careers — RefactorsLife</title>
+  <meta name="description" content="Remote internships at RefactorsLife: video editing, thumbnail design, content research, social media, web development and campus ambassadors. Build a real, public portfolio.">
+  <link rel="canonical" href="https://refactorslife.in/careers.html">
+  <meta property="og:title" content="Intern at RefactorsLife">
+  <meta property="og:description" content="Remote internships for students: editing, design, writing, social and web.">
+  <meta property="og:image" content="https://refactorslife.in/assets/img/og.jpg">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="careers" data-root="">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero bg-grid bg-glow">
+      <div class="container">
+        <span class="eyebrow">Careers · Now hiring interns</span>
+        <h1>Build your portfolio <span class="grad">in public.</span></h1>
+        <p>Remote internships for students who want real, published work to show — not practice projects. Edit, design, write, grow, or build with us.</p>
+        <div class="hero-ctas" style="justify-content:center;margin-top:8px">
+          <a class="btn btn-primary btn-lg" href="#roles">See open roles</a>
+          <a class="btn btn-ghost btn-lg" href="#apply">Apply now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Perks -->
+    <section class="section" style="padding-top:32px">
+      <div class="container">
+        <div class="grid grid-4" data-render="perks"></div>
+      </div>
+    </section>
+
+    <!-- Roles -->
+    <section class="section" id="roles">
+      <div class="container container-narrow" style="max-width:calc(900px + var(--gutter) * 2)">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Open roles</span>
+            <h2 class="h2">Pick where you fit.</h2>
+            <p>All roles are remote and part-time, designed to fit around college.</p>
+          </div>
+        </div>
+        <div class="roles" data-render="roles"></div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Hiring process</span>
+            <h2 class="h2">Four steps. About a week.</h2>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><h3>Apply</h3><p>Fill the form below with your portfolio or sample work.</p></div>
+          <div class="step reveal"><h3>Small task</h3><p>A short, real task — edit a clip, design a thumbnail, write a hook.</p></div>
+          <div class="step reveal"><h3>15-min call</h3><p>A quick chat about how you work and what you want to learn.</p></div>
+          <div class="step reveal"><h3>Onboard</h3><p>Join the team channel and ship your first piece within two weeks.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apply -->
+    <section class="section" id="apply">
+      <div class="container" style="max-width:calc(820px + var(--gutter) * 2)">
+        <div class="section-head" style="justify-content:center;text-align:center">
+          <div style="justify-items:center">
+            <span class="eyebrow">Application</span>
+            <h2 class="h2">Apply to join the crew.</h2>
+            <p>Takes about 3 minutes. We reply to every application within 7 days.</p>
+          </div>
+        </div>
+        <div class="form-card form-wrap reveal">
+          <form class="form" data-form="apply">
+            <div class="form-row">
+              <div class="field"><label for="a-name">Full name</label><input id="a-name" type="text" name="name" required autocomplete="name"></div>
+              <div class="field"><label for="a-email">Email</label><input id="a-email" type="email" name="email" required autocomplete="email"></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="a-college">College</label><input id="a-college" type="text" name="college" required placeholder="e.g. NIT Patna"></div>
+              <div class="field">
+                <label for="a-year">Year</label>
+                <select id="a-year" name="year" required>
+                  <option value="" disabled selected>Select year</option>
+                  <option>1st year</option><option>2nd year</option><option>3rd year</option><option>4th year</option><option>Graduated</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="apply-role">Role</label>
+                <select id="apply-role" name="role" required data-render="role-options"><option value="" disabled selected>Choose a role</option></select>
+              </div>
+              <div class="field">
+                <label for="a-hours">Hours per week</label>
+                <select id="a-hours" name="hours" required>
+                  <option value="" disabled selected>Select</option>
+                  <option>Under 5</option><option>5–8</option><option>8–12</option><option>12+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="a-portfolio">Portfolio / sample work link</label>
+              <input id="a-portfolio" type="url" name="portfolio" required placeholder="Drive, Behance, YouTube, GitHub…">
+              <span class="hint">Make sure the link is viewable by anyone.</span>
+            </div>
+            <div class="field">
+              <label for="a-resume">Resume link <span class="opt">(optional)</span></label>
+              <input id="a-resume" type="url" name="resume" placeholder="Google Drive link">
+            </div>
+            <div class="field">
+              <label for="a-why">Why RefactorsLife?</label>
+              <textarea id="a-why" name="why" required maxlength="800" placeholder="What do you want to learn, and what will you bring?"></textarea>
+              <span class="hint" data-counter></span>
+            </div>
+            <div class="field"><label for="a-phone">Phone / WhatsApp <span class="opt">(optional)</span></label><input id="a-phone" type="tel" name="phone" autocomplete="tel"></div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+            <button class="btn btn-accent btn-lg" type="submit">Submit application <i data-icon="arrowRight"></i></button>
+            <p class="form-note">By applying you agree that we can contact you about this role. We never share your details.</p>
+          </form>
+          <div class="form-success" role="status">
+            <div class="ok"><i data-icon="check"></i></div>
+            <h3>Application received!</h3>
+            <p>Thanks for applying. We'll review your work and get back to you within 7 days.</p>
+            <button class="btn btn-ghost btn-sm" type="button" data-reset-form>Submit another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

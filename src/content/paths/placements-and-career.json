@@ -1,0 +1,37 @@
+{
+  "title": "Placements & career mindset",
+  "description": "The strategy side of engineering: getting back on track, planning your days, avoiding common rejections and aiming for high-impact roles.",
+  "level": "All levels",
+  "icon": "briefcase",
+  "tone": "cyan",
+  "order": 4,
+  "outcomes": [
+    "A realistic comeback plan",
+    "A daily routine that sticks",
+    "Know why good students get rejected, and fix it",
+    "A strategy for high-package roles"
+  ],
+  "steps": [
+    {
+      "video": "PX3kgpHe3og",
+      "note": "Reset: a practical plan to get back on track."
+    },
+    {
+      "video": "lmgo_hP_IZ0",
+      "note": "Plan your days so preparation actually happens."
+    },
+    {
+      "video": "5xYKkgmTu8E",
+      "note": "The common reasons good students get rejected."
+    },
+    {
+      "video": "D6phGbqQtYI",
+      "note": "How high-package roles are cracked in the AI era."
+    },
+    {
+      "video": "g9lypxza4wM",
+      "note": "Hackathons as a career accelerator: a 2× SIH winner on what it takes."
+    }
+  ],
+  "resource": null
+}

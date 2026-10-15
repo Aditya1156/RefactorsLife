@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "q": "How do I get the GitHub Student Developer Pack?",
+      "a": "The full step-by-step walkthrough: eligibility, documents and what to do if you get rejected.",
+      "video": "VDwZmzesj0U",
+      "tag": "Dev Setup"
+    },
+    {
+      "q": "How do I set up C / C++ in VS Code?",
+      "a": "Compiler install, PATH setup and your first program running in VS Code.",
+      "video": "FJ_IQN_YFxs",
+      "tag": "Dev Setup"
+    },
+    {
+      "q": "Is Smart India Hackathon worth it? How do I win?",
+      "a": "A full podcast episode with a 2× SIH winner on team building, problem statements and judging.",
+      "video": "g9lypxza4wM",
+      "tag": "Podcast"
+    },
+    {
+      "q": "How do people crack 50+ LPA roles right now?",
+      "a": "A breakdown of the strategy a Zomato software engineer used, in the AI era.",
+      "video": "D6phGbqQtYI",
+      "tag": "Career"
+    },
+    {
+      "q": "Why am I getting rejected from 10 LPA jobs?",
+      "a": "The common reasons, and what to fix before your next interview.",
+      "video": "5xYKkgmTu8E",
+      "tag": "Career"
+    }
+  ]
+}

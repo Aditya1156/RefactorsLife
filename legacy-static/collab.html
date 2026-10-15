@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work with us — RefactorsLife</title>
+  <meta name="description" content="Partner with RefactorsLife: brand integrations for developer tools and ed-tech, college talks and workshops, and podcast guest appearances.">
+  <link rel="canonical" href="https://refactorslife.in/collab.html">
+  <meta property="og:title" content="Work with RefactorsLife">
+  <meta property="og:image" content="https://refactorslife.in/assets/img/og.jpg">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="collab" data-root="">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero bg-grid bg-glow">
+      <div class="container">
+        <span class="eyebrow">Work with us</span>
+        <h1>Reach engineering students <span class="grad">who actually listen.</span></h1>
+        <p>Brands, colleges and creators — let's build something useful together for students across India.</p>
+      </div>
+    </section>
+
+    <!-- Audience -->
+    <section class="section-sm" style="padding-top:16px">
+      <div class="container">
+        <div class="stats reveal" data-render="stats"></div>
+        <p class="muted" style="text-align:center;margin-top:20px;font-size:14.5px">Audience: engineering students and early-career developers, mostly in India. Videos in Hindi & English.</p>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Ways to collaborate</span>
+            <h2 class="h2">Three ways to work together.</h2>
+          </div>
+        </div>
+        <div class="kit">
+          <div class="card offer reveal">
+            <div class="icon-tile"><i data-icon="zap"></i></div>
+            <h3>Brand integrations</h3>
+            <p>For developer tools, ed-tech, laptops and student offers that genuinely help.</p>
+            <ul><li>Dedicated tutorial or integrated segment</li><li>Shorts, Instagram & community posts</li><li>Blog post + link on this site</li></ul>
+          </div>
+          <div class="card offer reveal">
+            <div class="icon-tile green"><i data-icon="building"></i></div>
+            <h3>Colleges & clubs</h3>
+            <p>Talks, workshops and hackathon sessions — online or on campus.</p>
+            <ul><li>Smart India Hackathon prep sessions</li><li>Git, GitHub & dev-tools workshops</li><li>Placement & career talks, judging</li></ul>
+          </div>
+          <div class="card offer reveal" id="guest">
+            <div class="icon-tile warm"><i data-icon="mic"></i></div>
+            <h3>Podcast guests</h3>
+            <p>Have a story worth hearing? Come on Refactoring Life with Aditya.</p>
+            <ul><li>Engineers, founders, hackathon winners</li><li>Students with an unusual journey</li><li>Creators in tech & education</li></ul>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:28px;font-size:14.5px">We only promote products we'd use ourselves, and every sponsorship is clearly disclosed.</p>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section" id="contact">
+      <div class="container" style="max-width:calc(820px + var(--gutter) * 2)">
+        <div class="section-head" style="justify-content:center;text-align:center">
+          <div style="justify-items:center">
+            <span class="eyebrow">Get in touch</span>
+            <h2 class="h2">Tell us what you have in mind.</h2>
+            <p>We reply within 2–3 working days. Prefer email? <a class="accent" data-link="email" href="#">Write to us directly.</a></p>
+          </div>
+        </div>
+        <div class="form-card form-wrap reveal">
+          <form class="form" data-form="collab">
+            <div class="field">
+              <span class="label" id="ctype-label">I'm reaching out as a…</span>
+              <div class="segmented" role="radiogroup" aria-labelledby="ctype-label">
+                <input type="radio" name="type" id="c1" value="Brand" checked><label for="c1">Brand</label>
+                <input type="radio" name="type" id="c2" value="College / club"><label for="c2">College / club</label>
+                <input type="radio" name="type" id="c3" value="Podcast guest"><label for="c3">Podcast guest</label>
+                <input type="radio" name="type" id="c4" value="Creator"><label for="c4">Creator</label>
+                <input type="radio" name="type" id="c5" value="Other"><label for="c5">Other</label>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="c-name">Your name</label><input id="c-name" type="text" name="name" required autocomplete="name"></div>
+              <div class="field"><label for="c-email">Work email</label><input id="c-email" type="email" name="email" required autocomplete="email"></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="c-org">Organisation</label><input id="c-org" type="text" name="organisation" placeholder="Company, college or club"></div>
+              <div class="field"><label for="c-site">Website / profile <span class="opt">(optional)</span></label><input id="c-site" type="url" name="website" placeholder="https://"></div>
+            </div>
+            <div class="field">
+              <label for="c-msg">Details</label>
+              <textarea id="c-msg" name="message" required maxlength="1500" placeholder="What are you planning, and when?"></textarea>
+              <span class="hint" data-counter></span>
+            </div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+            <button class="btn btn-accent btn-lg" type="submit">Send enquiry <i data-icon="arrowRight"></i></button>
+          </form>
+          <div class="form-success" role="status">
+            <div class="ok"><i data-icon="check"></i></div>
+            <h3>Thanks — we'll be in touch.</h3>
+            <p>Expect a reply within 2–3 working days.</p>
+            <button class="btn btn-ghost btn-sm" type="button" data-reset-form>Send another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

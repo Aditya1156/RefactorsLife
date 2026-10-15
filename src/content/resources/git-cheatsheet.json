@@ -1,0 +1,182 @@
+{
+  "title": "Git & GitHub Cheat Sheet",
+  "text": "Every command from the beginner tutorial on one printable page: setup, daily loop, branches and fixing mistakes.",
+  "kind": "Cheat sheet · 1 page",
+  "icon": "code",
+  "tone": "blue",
+  "order": 1,
+  "video": "9nb-YxETdqo",
+  "soon": false,
+  "eyebrow": "Cheat sheet",
+  "intro": "Every command a beginner needs, in the order you'll need it. Pin it next to your screen.",
+  "sections": [
+    {
+      "title": "1 · One-time setup",
+      "note": "// once per laptop",
+      "list": {
+        "discriminant": "commands",
+        "value": [
+          {
+            "command": "git --version",
+            "meaning": "Check Git is installed"
+          },
+          {
+            "command": "git config --global user.name \"Your Name\"",
+            "meaning": "Name on your commits"
+          },
+          {
+            "command": "git config --global user.email \"you@mail.com\"",
+            "meaning": "Use your GitHub email"
+          },
+          {
+            "command": "git config --global init.defaultBranch main",
+            "meaning": "New repos start on main"
+          }
+        ]
+      }
+    },
+    {
+      "title": "2 · Start a project",
+      "note": "",
+      "list": {
+        "discriminant": "commands",
+        "value": [
+          {
+            "command": "git init",
+            "meaning": "Start tracking the current folder"
+          },
+          {
+            "command": "git clone <url>",
+            "meaning": "Download a repo from GitHub"
+          },
+          {
+            "command": "git remote add origin <url>",
+            "meaning": "Link your folder to a GitHub repo"
+          },
+          {
+            "command": "git push -u origin main",
+            "meaning": "First upload; sets the default"
+          }
+        ]
+      }
+    },
+    {
+      "title": "3 · The daily loop",
+      "note": "// 90% of your Git life",
+      "list": {
+        "discriminant": "commands",
+        "value": [
+          {
+            "command": "git status",
+            "meaning": "What changed? Run it often"
+          },
+          {
+            "command": "git add .",
+            "meaning": "Stage every change"
+          },
+          {
+            "command": "git add <file>",
+            "meaning": "Stage one file"
+          },
+          {
+            "command": "git commit -m \"message\"",
+            "meaning": "Save a snapshot"
+          },
+          {
+            "command": "git push",
+            "meaning": "Upload commits to GitHub"
+          },
+          {
+            "command": "git pull",
+            "meaning": "Download teammates' changes"
+          }
+        ]
+      }
+    },
+    {
+      "title": "4 · Branches",
+      "note": "",
+      "list": {
+        "discriminant": "commands",
+        "value": [
+          {
+            "command": "git branch",
+            "meaning": "List branches"
+          },
+          {
+            "command": "git switch -c feature-x",
+            "meaning": "Create and move to a branch"
+          },
+          {
+            "command": "git switch main",
+            "meaning": "Go back to main"
+          },
+          {
+            "command": "git merge feature-x",
+            "meaning": "Bring a branch into the current one"
+          },
+          {
+            "command": "git branch -d feature-x",
+            "meaning": "Delete a merged branch"
+          }
+        ]
+      }
+    },
+    {
+      "title": "5 · See history",
+      "note": "",
+      "list": {
+        "discriminant": "commands",
+        "value": [
+          {
+            "command": "git log --oneline --graph",
+            "meaning": "Compact history"
+          },
+          {
+            "command": "git diff",
+            "meaning": "Unstaged changes"
+          },
+          {
+            "command": "git diff --staged",
+            "meaning": "What you're about to commit"
+          },
+          {
+            "command": "git show <commit>",
+            "meaning": "Details of one commit"
+          }
+        ]
+      }
+    },
+    {
+      "title": "6 · Undo mistakes",
+      "note": "// don't panic",
+      "list": {
+        "discriminant": "commands",
+        "value": [
+          {
+            "command": "git restore <file>",
+            "meaning": "Discard unsaved changes to a file"
+          },
+          {
+            "command": "git restore --staged <file>",
+            "meaning": "Unstage, keep the changes"
+          },
+          {
+            "command": "git commit --amend",
+            "meaning": "Fix the last commit (before pushing)"
+          },
+          {
+            "command": "git revert <commit>",
+            "meaning": "Safely undo a pushed commit"
+          },
+          {
+            "command": "git stash  /  git stash pop",
+            "meaning": "Park changes, bring them back"
+          }
+        ]
+      }
+    }
+  ],
+  "footLeft": "Tip: add a .gitignore so node_modules, .env and build files never get committed.",
+  "footRight": "Watch the walkthrough: youtube.com/@RefactorsLife"
+}

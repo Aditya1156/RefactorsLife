@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Git & GitHub for Beginners: Upload Your First Project — RefactorsLife</title>
+  <meta name="description" content="Install Git, connect it to GitHub, and push your first project — every command explained for beginners.">
+  <link rel="canonical" href="https://refactorslife.in/blog/git-github-first-project.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Git & GitHub for Beginners: Set Up and Upload Your First Project">
+  <meta property="og:description" content="The exact commands to push your first repository, explained.">
+  <meta property="og:image" content="https://i.ytimg.com/vi/9nb-YxETdqo/maxresdefault.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Git & GitHub for Beginners: Set Up and Upload Your First Project",
+    "datePublished": "2026-10-15",
+    "author": { "@type": "Organization", "name": "RefactorsLife" },
+    "image": "https://i.ytimg.com/vi/9nb-YxETdqo/maxresdefault.jpg"
+  }
+  </script>
+</head>
+<body data-page="blog" data-root="../">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <article class="container container-narrow">
+      <header class="post-header">
+        <a class="back-link" href="index.html"><i data-icon="arrowLeft"></i>All posts</a>
+        <div class="post-meta"><span>Dev Setup</span><span class="sep"></span><span data-render="post-date" data-date="2026-10-15"></span><span class="sep"></span><span>8 min read</span></div>
+        <h1>Git & GitHub for Beginners: Set Up and Upload Your First Project</h1>
+        <p class="lead">Install Git, connect it to GitHub, and push your first repository — the exact commands, and what each one does.</p>
+      </header>
+
+      <div class="prose">
+        <div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/9nb-YxETdqo?rel=0" title="Git & GitHub Tutorial for Beginners" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+        <p><strong>Git</strong> is a tool on your computer that tracks every change you make to your code. <strong>GitHub</strong> is a website that stores those Git projects online, so you can back them up, share them and collaborate. You need both. Prefer Hindi? Watch <a href="#" data-video="iToAICeOxiA" data-title="Git & GitHub Explained in Hindi">Git & GitHub explained in Hindi</a>.</p>
+
+        <h2>1. Install Git</h2>
+        <ul>
+          <li><strong>Windows:</strong> download the installer from <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git-scm.com</a>. The default options are fine.</li>
+          <li><strong>macOS:</strong> run <code>xcode-select --install</code> in Terminal, or <code>brew install git</code>.</li>
+          <li><strong>Linux (Ubuntu/Debian):</strong> <code>sudo apt install git</code>.</li>
+        </ul>
+        <p>Check it worked:</p>
+<pre><code>git --version</code></pre>
+
+        <h2>2. Tell Git who you are</h2>
+        <p>Every commit is signed with a name and email. Use the same email as your GitHub account:</p>
+<pre><code>git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global init.defaultBranch main</code></pre>
+
+        <h2>3. Create a repository on GitHub</h2>
+        <ol>
+          <li>Sign in to <a href="https://github.com" target="_blank" rel="noopener">github.com</a> and click <strong>New repository</strong>.</li>
+          <li>Give it a name, e.g. <code>my-first-project</code>.</li>
+          <li>Leave “Add a README” <strong>unchecked</strong> — we'll push our own files.</li>
+          <li>Click <strong>Create repository</strong> and copy the URL it shows.</li>
+        </ol>
+
+        <h2>4. Push your project</h2>
+        <p>Open a terminal in your project folder (in VS Code: <em>Terminal → New Terminal</em>) and run:</p>
+<pre><code>git init                      # start tracking this folder
+git add .                     # stage every file
+git commit -m "first commit"  # save a snapshot
+git remote add origin https://github.com/&lt;you&gt;/my-first-project.git
+git push -u origin main       # upload to GitHub</code></pre>
+        <p>Refresh the GitHub page — your files are there.</p>
+
+        <h2>5. Signing in from the terminal</h2>
+        <p>GitHub doesn't accept your account password for <code>git push</code>. The easiest options:</p>
+        <ul>
+          <li><strong>Windows:</strong> Git's installer includes a credential manager — a browser window opens to sign in the first time you push.</li>
+          <li><strong>Any OS:</strong> install the <a href="https://cli.github.com" target="_blank" rel="noopener">GitHub CLI</a> and run <code>gh auth login</code>.</li>
+          <li>Or create a <strong>personal access token</strong> in <em>Settings → Developer settings</em> and paste it when asked for a password.</li>
+        </ul>
+
+        <h2>6. Your everyday loop</h2>
+        <p>After the first push, every change is just three commands:</p>
+<pre><code>git add .
+git commit -m "describe what you changed"
+git push</code></pre>
+
+        <div class="callout">Commit small and often, with messages that say <em>why</em>. Future you — and recruiters reading your GitHub — will thank you.</div>
+
+        <h2>Next steps</h2>
+        <p>If you're a student, grab the <a href="github-student-developer-pack-2026.html">GitHub Student Developer Pack</a> next — free Copilot and a free domain make your GitHub profile much more powerful.</p>
+      </div>
+
+      <div class="post-footer">
+        <div><b>Got an error?</b><p>Paste it on the Ask page or in the Telegram group.</p></div>
+        <a class="btn btn-accent" href="../ask.html">Ask a question <i data-icon="arrowRight"></i></a>
+      </div>
+      <div style="height:96px"></div>
+    </article>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

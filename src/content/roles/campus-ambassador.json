@@ -1,0 +1,16 @@
+{
+  "title": "Campus Ambassador",
+  "type": "Remote / your college · flexible",
+  "icon": "megaphone",
+  "tone": "sky",
+  "order": 6,
+  "summary": "Bring RefactorsLife to your college: events, clubs and the Telegram community.",
+  "tasks": [
+    "Share videos and resources with your college groups",
+    "Help organise talks, workshops or hackathon sessions",
+    "Bring student stories and questions to the channel"
+  ],
+  "need": ["Currently enrolled in college", "Active in a tech club or community", "Comfortable talking to people"],
+  "seat": "",
+  "open": true
+}
